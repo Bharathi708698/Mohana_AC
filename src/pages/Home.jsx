@@ -3,15 +3,33 @@ import { useEffect } from "react";
 // import Footer from '../../components/feature/Footer';
 import Button from "../components/base/Button";
 import ServiceCard from "../components/base/ServiceCard";
-import { AC_Service, Fridge, Logo, WashingMachine, WaterHeater, WaterPurifier } from "../utils/image_distributor";
-import Hero from "../assets/heroSection.jpg";
+import {
+  AC_Service,
+  Fridge,
+  Logo,
+  WashingMachine,
+  WaterHeater,
+  WaterPurifier,
+} from "../utils/image_distributor";
 
 export default function Home() {
   useEffect(() => {
     // Smooth scroll behavior for anchor links
+    // const handleHashChange = () => {
+    //   const hash = window.location.hash;
+    //   if (hash) {
+    //     const element = document.querySelector(hash);
+    //     if (element) {
+    //       element.scrollIntoView({ behavior: "smooth" });
+    //     }
+    //   }
+    // };
+
     const handleHashChange = () => {
       const hash = window.location.hash;
-      if (hash) {
+
+      // Make sure the hash is not empty and starts with '#' (valid selector)
+      if (hash && hash !== "#/") {
         const element = document.querySelector(hash);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
@@ -91,7 +109,7 @@ export default function Home() {
         "Installation",
         "Safety Checks",
       ],
-      imageUrl: WaterHeater ,
+      imageUrl: WaterHeater,
     },
   ];
 

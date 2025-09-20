@@ -14,7 +14,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About CoolAir Pro
+              About Mohana Air Conditioner
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
               Your trusted partner for professional AC services since 2009. We
@@ -64,7 +64,7 @@ export default function About() {
               <div className="relative">
                 <img
                   src={Logo}
-                  alt="CoolAir Pro technicians at work"
+                  alt="Mohana AC technicians at work"
                   className="rounded-lg shadow-xl object-cover w-full h-96"
                 />
               </div>
