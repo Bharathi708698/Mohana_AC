@@ -6,10 +6,12 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
+import ScrollToTop from './components/base/ScrollToTop';
 
 const App = () => {
   return (
     <HashRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
